@@ -85,6 +85,7 @@ img {
   font-size: 26px;
   font-weight: 700px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 
 .logo-studio {
@@ -93,7 +94,6 @@ img {
   font-size: 26px;
   font-weight: 700px;
   line-height: 1.19;
-  margin-right: 93px;
 }
 
 .site-nav {
@@ -117,7 +117,8 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.nav-item,
+
+.nav-item:not(:last-child),
 .link-address:not(:last-child) {
   margin-right: 50px;
 }
@@ -210,6 +211,7 @@ img {
   color: #fff;
   background: var(--accent-color);
   border: none;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -267,9 +269,6 @@ img {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-}
-
-.activity-list-item {
   margin-top: 50px;
 }
 
@@ -308,14 +307,6 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-.team-links-item:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-.team-links-item:hover .link-icon {
-  fill: var(--white-color);
-}
 .team-member {
   color: var(--title-text-color);
   font-weight: 500;
@@ -333,6 +324,14 @@ img {
   text-align: center;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+.team-links-item:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.team-links-item:hover .link-icon {
+  fill: var(--white-color);
 }
 
 .team-links {
@@ -359,6 +358,11 @@ img {
 .team-links-item .link-icon {
   fill: #afb1b8;
   cursor: pointer;
+}
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* clients section */
@@ -397,6 +401,9 @@ img {
   /* padding: 16px 32px; */
   fill: var(--icon-fill);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients-item:hover {
   border: 1px solid var(--accent-color);
@@ -495,6 +502,9 @@ img {
 
 .link-icon {
   fill: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Portfolio page */
